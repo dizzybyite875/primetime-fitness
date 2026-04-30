@@ -11,18 +11,12 @@
         /* Headers get the heavy, intense bootcamp font */
         h1, h2, h3 { font-family: 'Arial Black', Impact, sans-serif; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
         
-        /* Header section */
-        header { padding: 80px 20px; text-align: center; border-bottom: 5px solid #000000; background: #ffffff; }
-        h1 { font-size: 4.5em; margin-bottom: 10px; line-height: 1; }
-        p.subtitle { font-size: 1.3em; font-weight: bold; margin-top: 15px; }
-        
-        /* Gritty Button - Sharp corners, thick borders */
-        .cta-button { background: #000000; color: #ffffff; padding: 18px 40px; text-decoration: none; font-weight: 900; display: inline-block; margin-top: 30px; font-size: 1.2em; border: 3px solid #000000; transition: all 0.2s ease; text-transform: uppercase; }
-        .cta-button:hover { background: #ffffff; color: #000000; box-shadow: 6px 6px 0px #000000; transform: translate(-2px, -2px); }
+        /* Header section - Cleaned up to just the bold title */
+        header { padding: 80px 20px 50px 20px; text-align: center; border-bottom: 5px solid #000000; background: #ffffff; }
+        h1 { font-size: 5em; margin-bottom: 0; line-height: 1; }
         
         /* Main content layout */
         section { padding: 80px 20px; max-width: 1050px; margin: 0 auto; text-align: center; }
-        h2 { font-size: 2.8em; margin-bottom: 50px; border-bottom: 3px solid #000000; display: inline-block; padding-bottom: 10px; }
         
         /* Bootcamp Style Program Cards */
         .programs-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
@@ -33,21 +27,18 @@
         
         /* Registration Section */
         #register { border: 5px solid #000000; padding: 60px 20px; margin-bottom: 60px; box-shadow: 10px 10px 0px #000000; }
+        #register h2 { font-size: 2.8em; margin-bottom: 20px; border-bottom: 3px solid #000000; display: inline-block; padding-bottom: 10px; }
         
-        /* Footer */
-        footer { background: #000000; padding: 30px; text-align: center; color: #ffffff; font-weight: bold; font-size: 1em; text-transform: uppercase; letter-spacing: 1px; }
+        /* Footer - Upgraded to look highly professional */
+        footer { background: #000000; padding: 30px; text-align: center; color: #ffffff; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; }
     </style>
 </head>
 <body>
     <header>
         <h1>FitGuru Fitness</h1>
-        <p class="subtitle">Strength, Discipline, and Community for All Ages.</p>
-        <a href="#register" class="cta-button">Join the Routine</a>
     </header>
     
     <section>
-        <h2>Our Training Programs</h2>
-        
         <div class="programs-container">
             <div class="program-card">
                 <h3>Youth Fitness</h3>
@@ -70,7 +61,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 FitGuru Fitness. All rights reserved.</p>
+        <p>&copy; 2026 FitGuru Fitness. All rights reserved. | Where Professional Coaching Meets Elite Results.</p>
     </footer>
 </body>
 </html>
