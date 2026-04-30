@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prime Time Fitness LLC</title>
     <style>
-        body { font-family: sans-serif; background: #1a1a1a; color: white; text-align: center; }
-        header { padding: 50px; background: #d40000; } /* Red for energy */
-        .cta-button { background: white; color: #d40000; padding: 15px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; }
-        section { padding: 40px; }
+        body { font-family: sans-serif; background: #1a1a1a; color: white; text-align: center; margin: 0; padding: 0; }
+        header { padding: 60px 20px; background: #d40000; } /* Red for energy */
+        .cta-button { background: white; color: #d40000; padding: 15px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 15px; }
+        section { padding: 50px 20px; }
+        
+        /* This styles the Google Form box */
+        iframe { width: 100%; max-width: 640px; height: 800px; border: none; border-radius: 10px; background: white; margin-top: 20px;}
     </style>
 </head>
 <body>
@@ -16,11 +19,19 @@
         <h1>PRIME TIME FITNESS</h1>
         <p>Level up your strength and discipline.</p>
         <br>
-        <a href="#" class="cta-button">Join the Routine</a>
+        <a href="#signup" class="cta-button">Join the Routine</a>
     </header>
+    
     <section>
         <h2>Workouts & Training</h2>
-        <p>Expert coaching and high-intensity regimens.</p>
+        <p>Expert coaching and high-intensity regimens for youth and seniors.</p>
+    </section>
+
+    <section id="signup" style="background: #222222;">
+        <h2>Register Now</h2>
+        <p>Fill out the form below to secure your spot in the boot camp.</p>
+        
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfQlgr-TWL5agwopJIGZG_MQ30kmy2pRZjqgrKmC5sTHYX5Lg/viewform?embedded=true">Loading…</iframe>
     </section>
 </body>
 </html>
