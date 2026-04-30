@@ -5,31 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitGuru Fitness</title>
     <style>
-        /* Clean, professional minimalist all-white theme */
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #ffffff; color: #222222; margin: 0; padding: 0; line-height: 1.6; }
+        /* Gritty, Professional, Black & White Theme */
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #ffffff; color: #000000; margin: 0; padding: 0; line-height: 1.6; }
+        
+        /* Headers get the heavy, intense bootcamp font */
+        h1, h2, h3 { font-family: 'Arial Black', Impact, sans-serif; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
         
         /* Header section */
-        header { padding: 70px 20px; text-align: center; background: #ffffff; border-bottom: 1px solid #eaeaea; }
-        h1 { color: #111111; font-size: 3.8em; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; font-weight: 900; } /* Super bold title */
-        p.subtitle { font-size: 1.2em; color: #666666; margin-top: 0; font-weight: 300; }
+        header { padding: 80px 20px; text-align: center; border-bottom: 5px solid #000000; background: #ffffff; }
+        h1 { font-size: 4.5em; margin-bottom: 10px; line-height: 1; }
+        p.subtitle { font-size: 1.3em; font-weight: bold; margin-top: 15px; }
         
-        /* Sleek Button styling */
-        .cta-button { background: #111111; color: #ffffff; padding: 15px 35px; text-decoration: none; border-radius: 4px; font-weight: bold; display: inline-block; margin-top: 25px; font-size: 1.1em; transition: background 0.3s; letter-spacing: 1px; text-transform: uppercase; }
-        .cta-button:hover { background: #444444; }
+        /* Gritty Button - Sharp corners, thick borders */
+        .cta-button { background: #000000; color: #ffffff; padding: 18px 40px; text-decoration: none; font-weight: 900; display: inline-block; margin-top: 30px; font-size: 1.2em; border: 3px solid #000000; transition: all 0.2s ease; text-transform: uppercase; }
+        .cta-button:hover { background: #ffffff; color: #000000; box-shadow: 6px 6px 0px #000000; transform: translate(-2px, -2px); }
         
         /* Main content layout */
-        section { padding: 70px 20px; max-width: 1050px; margin: 0 auto; text-align: center; }
-        h2 { font-size: 2.2em; color: #111111; margin-bottom: 50px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
+        section { padding: 80px 20px; max-width: 1050px; margin: 0 auto; text-align: center; }
+        h2 { font-size: 2.8em; margin-bottom: 50px; border-bottom: 3px solid #000000; display: inline-block; padding-bottom: 10px; }
         
-        /* Clean side-by-side program boxes */
+        /* Bootcamp Style Program Cards */
         .programs-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
-        .program-card { background: #ffffff; border: 1px solid #eeeeee; border-radius: 4px; padding: 40px 25px; width: 280px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.02); transition: transform 0.3s; }
-        .program-card:hover { transform: translateY(-5px); }
-        .program-card h3 { color: #111111; font-size: 1.5em; margin-top: 0; font-weight: bold; }
-        .program-card p { font-size: 1.05em; color: #555555; }
+        .program-card { background: #ffffff; border: 4px solid #000000; padding: 40px 25px; width: 280px; text-align: left; box-shadow: 8px 8px 0px #000000; transition: transform 0.2s; }
+        .program-card:hover { transform: translate(-4px, -4px); box-shadow: 12px 12px 0px #000000; }
+        .program-card h3 { font-size: 1.6em; margin-bottom: 15px; border-bottom: 2px solid #000000; padding-bottom: 10px; }
+        .program-card p { font-size: 1.1em; font-weight: 500; }
+        
+        /* Registration Section */
+        #register { border: 5px solid #000000; padding: 60px 20px; margin-bottom: 60px; box-shadow: 10px 10px 0px #000000; }
         
         /* Footer */
-        footer { background: #ffffff; padding: 30px; text-align: center; margin-top: 20px; color: #999999; border-top: 1px solid #eaeaea; font-size: 0.9em; }
+        footer { background: #000000; padding: 30px; text-align: center; color: #ffffff; font-weight: bold; font-size: 1em; text-transform: uppercase; letter-spacing: 1px; }
     </style>
 </head>
 <body>
@@ -41,6 +47,7 @@
     
     <section>
         <h2>Our Training Programs</h2>
+        
         <div class="programs-container">
             <div class="program-card">
                 <h3>Youth Fitness</h3>
@@ -57,9 +64,9 @@
         </div>
     </section>
 
-    <section id="register" style="background: #ffffff; border: 1px solid #eaeaea; border-radius: 4px; padding: 60px 20px; margin-bottom: 40px;">
+    <section id="register">
         <h2>Registration</h2>
-        <p style="font-size: 1.1em; color: #666;">Our official sign-up form is dropping soon. Get ready to secure your spot!</p>
+        <p style="font-size: 1.2em; font-weight: bold;">Our official sign-up form is dropping soon.<br>Get ready to secure your spot!</p>
     </section>
 
     <footer>
