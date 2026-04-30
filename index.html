@@ -5,32 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitGuru Fitness</title>
     <style>
-        /* Gritty, Professional, Black & White Theme */
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #ffffff; color: #000000; margin: 0; padding: 0; line-height: 1.6; }
+        /* Clean, Simple, All-White Theme */
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #ffffff; color: #222222; margin: 0; padding: 0; line-height: 1.6; }
         
-        /* Headers get the heavy, intense bootcamp font */
-        h1, h2, h3 { font-family: 'Arial Black', Impact, sans-serif; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
-        
-        /* Header section - Cleaned up to just the bold title */
-        header { padding: 80px 20px 50px 20px; text-align: center; border-bottom: 5px solid #000000; background: #ffffff; }
-        h1 { font-size: 5em; margin-bottom: 0; line-height: 1; }
+        /* Clean Header */
+        header { padding: 60px 20px 40px 20px; text-align: center; background: #ffffff; border-bottom: 1px solid #eaeaea; }
+        h1 { font-size: 4em; margin: 0; letter-spacing: 1px; color: #000000; }
         
         /* Main content layout */
-        section { padding: 80px 20px; max-width: 1050px; margin: 0 auto; text-align: center; }
+        section { padding: 60px 20px; max-width: 1050px; margin: 0 auto; text-align: center; }
         
-        /* Bootcamp Style Program Cards */
+        /* Simple Program Cards */
         .programs-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
-        .program-card { background: #ffffff; border: 4px solid #000000; padding: 40px 25px; width: 280px; text-align: left; box-shadow: 8px 8px 0px #000000; transition: transform 0.2s; }
-        .program-card:hover { transform: translate(-4px, -4px); box-shadow: 12px 12px 0px #000000; }
-        .program-card h3 { font-size: 1.6em; margin-bottom: 15px; border-bottom: 2px solid #000000; padding-bottom: 10px; }
-        .program-card p { font-size: 1.1em; font-weight: 500; }
+        .program-card { background: #ffffff; border: 1px solid #eaeaea; border-radius: 8px; padding: 40px 25px; width: 280px; text-align: left; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.2s ease; }
+        .program-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.06); }
+        .program-card h3 { font-size: 1.6em; margin-top: 0; margin-bottom: 15px; color: #000000; }
+        .program-card p { font-size: 1.1em; color: #555555; margin-bottom: 20px; }
+        
+        /* CTA Text inside cards */
+        .card-cta { font-size: 1em; font-weight: bold; color: #000000; display: block; padding-top: 15px; border-top: 1px solid #eaeaea; }
         
         /* Registration Section */
-        #register { border: 5px solid #000000; padding: 60px 20px; margin-bottom: 60px; box-shadow: 10px 10px 0px #000000; }
-        #register h2 { font-size: 2.8em; margin-bottom: 20px; border-bottom: 3px solid #000000; display: inline-block; padding-bottom: 10px; }
+        #register { background: #ffffff; border: 1px solid #eaeaea; border-radius: 8px; padding: 50px 20px; margin-bottom: 60px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
+        #register h2 { font-size: 2.2em; margin-top: 0; margin-bottom: 15px; color: #000000; }
         
-        /* Footer - Upgraded to look highly professional */
-        footer { background: #000000; padding: 30px; text-align: center; color: #ffffff; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; }
+        /* Simple Footer */
+        footer { background: #ffffff; padding: 30px; text-align: center; color: #666666; font-size: 0.9em; border-top: 1px solid #eaeaea; }
     </style>
 </head>
 <body>
@@ -43,25 +43,30 @@
             <div class="program-card">
                 <h3>Youth Fitness</h3>
                 <p>Building confidence, agility, and healthy habits early on in a fun, high-energy environment.</p>
+                <span class="card-cta">↳ If interested, please fill out the sign-up form below!</span>
             </div>
+            
             <div class="program-card">
-                <h3>Private & Small Group</h3>
-                <p>Choose between exclusive tailored coaching or high-energy small group sessions to crush your goals and maximize results.</p>
+                <h3>1-on-1 Personal Training</h3>
+                <p>Customized, private coaching designed to crush your specific goals, optimize form, and maximize results.</p>
+                <span class="card-cta">↳ If interested, please fill out the sign-up form below!</span>
             </div>
+            
             <div class="program-card">
                 <h3>Active Seniors</h3>
                 <p>Safe, guided mobility and strength training to keep you moving comfortably and confidently every day.</p>
+                <span class="card-cta">↳ If interested, please fill out the sign-up form below!</span>
             </div>
         </div>
     </section>
 
     <section id="register">
         <h2>Registration</h2>
-        <p style="font-size: 1.2em; font-weight: bold;">Our official sign-up form is dropping soon.<br>Get ready to secure your spot!</p>
+        <p style="font-size: 1.2em; color: #555;">Our official sign-up form is dropping soon. Get ready to secure your spot!</p>
     </section>
 
     <footer>
-        <p>&copy; 2026 FitGuru Fitness. All rights reserved. | Where Professional Coaching Meets Elite Results.</p>
+        <p>&copy; 2026 FitGuru Fitness. All rights reserved.</p>
     </footer>
 </body>
 </html>
