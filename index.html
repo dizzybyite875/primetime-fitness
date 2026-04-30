@@ -5,33 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prime Time Fitness LLC</title>
     <style>
-        body { font-family: sans-serif; background: #1a1a1a; color: white; text-align: center; margin: 0; padding: 0; }
-        header { padding: 60px 20px; background: #d40000; } /* Red for energy */
-        .cta-button { background: white; color: #d40000; padding: 15px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 15px; }
-        section { padding: 50px 20px; }
+        /* Clean, professional all-white theme */
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #ffffff; color: #333333; margin: 0; padding: 0; line-height: 1.6; }
         
-        /* This styles the Google Form box */
-        iframe { width: 100%; max-width: 640px; height: 800px; border: none; border-radius: 10px; background: white; margin-top: 20px;}
+        /* Header section */
+        header { padding: 50px 20px; text-align: center; border-bottom: 2px solid #f0f0f0; }
+        h1 { color: #d40000; font-size: 2.8em; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
+        p.subtitle { font-size: 1.3em; color: #555555; margin-top: 0; }
+        
+        /* Button styling - easy to tap on phones */
+        .cta-button { background: #d40000; color: white; padding: 15px 35px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; margin-top: 20px; font-size: 1.2em; transition: background 0.3s; }
+        .cta-button:hover { background: #a30000; }
+        
+        /* Main content layout */
+        section { padding: 60px 20px; max-width: 1000px; margin: 0 auto; text-align: center; }
+        h2 { font-size: 2em; color: #222222; margin-bottom: 20px; }
+        
+        /* Side-by-side program boxes */
+        .programs-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; margin-top: 40px; }
+        .program-card { background: #ffffff; border: 1px solid #e5e5e5; border-radius: 12px; padding: 35px 25px; width: 260px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.04); }
+        .program-card h3 { color: #d40000; font-size: 1.4em; margin-top: 0; }
+        .program-card p { font-size: 1.1em; color: #555555; }
+        
+        /* Footer */
+        footer { background: #fdfdfd; padding: 25px; text-align: center; margin-top: 40px; color: #888888; border-top: 1px solid #eeeeee; font-size: 0.9em; }
     </style>
 </head>
 <body>
     <header>
-        <h1>PRIME TIME FITNESS</h1>
-        <p>Level up your strength and discipline.</p>
-        <br>
-        <a href="#signup" class="cta-button">Join the Routine</a>
+        <h1>Prime Time Fitness</h1>
+        <p class="subtitle">Strength, Discipline, and Community for All Ages.</p>
+        <a href="#register" class="cta-button">Join the Routine</a>
     </header>
     
     <section>
-        <h2>Workouts & Training</h2>
-        <p>Expert coaching and high-intensity regimens for youth and seniors.</p>
+        <h2>Our Training Programs</h2>
+        <p style="font-size: 1.2em; color: #444;">Expert coaching tailored to your stage of life. Whether you are just starting out, keeping active, or looking to push your limits.</p>
+        
+        <div class="programs-container">
+            <div class="program-card">
+                <h3>Youth Fitness</h3>
+                <p>Building confidence, agility, and healthy habits early on in a fun, high-energy environment.</p>
+            </div>
+            <div class="program-card">
+                <h3>Adult High-Intensity</h3>
+                <p>Push your limits with elite regimens designed to build serious strength, discipline, and endurance.</p>
+            </div>
+            <div class="program-card">
+                <h3>Active Seniors</h3>
+                <p>Safe, guided mobility and strength training to keep you moving comfortably and confidently every day.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="signup" style="background: #222222;">
-        <h2>Register Now</h2>
-        <p>Fill out the form below to secure your spot in the boot camp.</p>
-        
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfQlgr-TWL5agwopJIGZG_MQ30kmy2pRZjqgrKmC5sTHYX5Lg/viewform?embedded=true">Loading…</iframe>
+    <section id="register" style="background: #fafafa; border-radius: 12px; padding: 50px 20px;">
+        <h2>Registration</h2>
+        <p style="font-size: 1.2em; color: #666;">Our official sign-up form is dropping soon. Get ready to secure your spot!</p>
     </section>
+
+    <footer>
+        <p>&copy; 2026 Prime Time Fitness LLC. All rights reserved.</p>
+    </footer>
 </body>
 </html>
