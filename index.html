@@ -9,25 +9,24 @@
         body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #ffffff; color: #222222; margin: 0; padding: 0; line-height: 1.6; }
         
         /* Clean Header */
-        header { padding: 60px 20px 40px 20px; text-align: center; background: #ffffff; border-bottom: 1px solid #eaeaea; }
-        h1 { font-size: 4em; margin: 0; letter-spacing: 1px; color: #000000; }
+        header { padding: 60px 20px 20px 20px; text-align: center; background: #ffffff; }
+        h1 { font-size: 4em; margin: 0; letter-spacing: 1px; color: #000000; font-weight: 800; }
+        
+        /* New placement for the interest text */
+        .interest-text { font-size: 1.2em; font-weight: bold; color: #000000; margin-top: 10px; text-transform: uppercase; letter-spacing: 1px; }
         
         /* Main content layout */
-        section { padding: 60px 20px; max-width: 1050px; margin: 0 auto; text-align: center; }
+        section { padding: 40px 20px; max-width: 800px; margin: 0 auto; text-align: center; }
         
-        /* Simple Program Cards */
-        .programs-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
-        .program-card { background: #ffffff; border: 1px solid #eaeaea; border-radius: 8px; padding: 40px 25px; width: 280px; text-align: left; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.2s ease; }
-        .program-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.06); }
-        .program-card h3 { font-size: 1.6em; margin-top: 0; margin-bottom: 15px; color: #000000; }
-        .program-card p { font-size: 1.1em; color: #555555; margin-bottom: 20px; }
-        
-        /* CTA Text inside cards */
-        .card-cta { font-size: 1em; font-weight: bold; color: #000000; display: block; padding-top: 15px; border-top: 1px solid #eaeaea; }
+        /* Single Focused Program Box */
+        .single-box-container { display: flex; justify-content: center; margin-top: 20px; }
+        .program-card { background: #ffffff; border: 1px solid #eaeaea; border-radius: 8px; padding: 50px 30px; width: 100%; max-width: 500px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
+        .program-card h3 { font-size: 2em; margin-top: 0; margin-bottom: 20px; color: #000000; text-transform: uppercase; }
+        .program-card p { font-size: 1.2em; color: #555555; margin-bottom: 0; }
         
         /* Registration Section */
-        #register { background: #ffffff; border: 1px solid #eaeaea; border-radius: 8px; padding: 50px 20px; margin-bottom: 60px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
-        #register h2 { font-size: 2.2em; margin-top: 0; margin-bottom: 15px; color: #000000; }
+        #register { background: #ffffff; border: 1px solid #eaeaea; border-radius: 8px; padding: 50px 20px; margin: 40px auto; max-width: 800px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); text-align: center; }
+        #register h2 { font-size: 2.2em; margin-top: 0; margin-bottom: 15px; color: #000000; text-transform: uppercase; }
         
         /* Simple Footer */
         footer { background: #ffffff; padding: 30px; text-align: center; color: #666666; font-size: 0.9em; border-top: 1px solid #eaeaea; }
@@ -36,26 +35,14 @@
 <body>
     <header>
         <h1>FitGuru Fitness</h1>
+        <p class="interest-text">↳ If interested, please fill out the sign-up form below!</p>
     </header>
     
     <section>
-        <div class="programs-container">
-            <div class="program-card">
-                <h3>Youth Fitness</h3>
-                <p>Building confidence, agility, and healthy habits early on in a fun, high-energy environment.</p>
-                <span class="card-cta">↳ If interested, please fill out the sign-up form below!</span>
-            </div>
-            
+        <div class="single-box-container">
             <div class="program-card">
                 <h3>1-on-1 Personal Training</h3>
-                <p>Customized, private coaching designed to crush your specific goals, optimize form, and maximize results.</p>
-                <span class="card-cta">↳ If interested, please fill out the sign-up form below!</span>
-            </div>
-            
-            <div class="program-card">
-                <h3>Active Seniors</h3>
-                <p>Safe, guided mobility and strength training to keep you moving comfortably and confidently every day.</p>
-                <span class="card-cta">↳ If interested, please fill out the sign-up form below!</span>
+                <p>Customized, private coaching designed to smash your specific goals, optimize form, and maximize results.</p>
             </div>
         </div>
     </section>
