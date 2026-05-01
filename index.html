@@ -9,8 +9,9 @@
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #000000; }
         .premium-container { border: 1px solid #eeeeee; }
-        .form-container { position: relative; width: 100%; overflow: hidden; padding-top: 120%; }
-        .form-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        /* Professional container for your Google Form */
+        .form-wrapper { width: 100%; display: flex; justify-content: center; overflow: hidden; }
+        iframe { max-width: 100%; border: none; }
     </style>
 </head>
 <body class="bg-white min-h-screen">
@@ -37,20 +38,8 @@
                 </p>
             </div>
 
-            <div class="form-container mb-10">
-                <div class="absolute inset-0 flex items-center justify-center border-2 border-dashed border-zinc-200 rounded-xl">
-                    <p class="text-zinc-400 italic text-sm">Paste your Google Form embed code here to display the form.</p>
-                </div>
-            </div>
-
-            <div class="mt-10 pt-10 border-t border-zinc-100">
-                <h3 class="text-xl font-bold uppercase mb-6 text-zinc-900">Payment Options</h3>
-                <p class="mb-8 text-zinc-600">Payments are handled <b>in person</b> or <b>coordinated after registration</b>. We accept:</p>
-                <div class="flex flex-col md:flex-row justify-center items-center gap-8 text-lg font-bold">
-                    <div class="flex items-center gap-2"><span class="w-3 h-3 bg-black rounded-full"></span> ZELLE</div>
-                    <div class="flex items-center gap-2"><span class="w-3 h-3 bg-black rounded-full"></span> CASH APP</div>
-                    <div class="flex items-center gap-2"><span class="w-3 h-3 bg-black rounded-full"></span> VENMO</div>
-                </div>
+            <div class="form-wrapper">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfQlgr-TWL5agwopJIGZG_MQ30kmy2pRZjqgrKmC5sTHYX5Lg/viewform?embedded=true" width="640" height="2100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
 
         </main>
