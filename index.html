@@ -3,98 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitGuru Fitness | Summer Program</title>
+    <title>FitGuru LLC | Fitness Programs</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap');
-        
-        body {
-            font-family: 'Inter', system_ui, sans-serif;
-        }
-        
-        .heading-font {
-            font-family: 'Playfair Display', sans-serif;
-        }
-
-        .main-container {
-            background: #ffffff;
-            box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.12);
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #000000; }
+        .premium-container { border: 1px solid #eeeeee; }
+        .form-container { position: relative; width: 100%; overflow: hidden; padding-top: 120%; }
+        .form-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
     </style>
 </head>
 <body class="bg-white min-h-screen">
-    
-    <div class="max-w-3xl mx-auto px-6">
+    <div class="max-w-3xl mx-auto px-6 py-20">
         
-        <!-- Header -->
-        <header class="pt-20 pb-10 text-center">
-            <h1 class="heading-font text-5xl md:text-6xl font-semibold tracking-tighter text-zinc-900">
-                FitGuru Fitness
-            </h1>
+        <header class="text-center mb-12">
+            <h1 class="text-6xl font-extrabold tracking-tighter uppercase">FitGuru Fitness</h1>
         </header>
 
-        <!-- Main Professional Container -->
-        <div class="main-container mx-auto bg-white rounded-3xl border border-zinc-100 overflow-hidden">
+        <main class="premium-container rounded-3xl p-6 md:p-16 text-center shadow-sm">
             
-            <!-- Content Area -->
-            <div class="px-10 md:px-16 py-16">
-                
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl md:text-5xl font-semibold text-zinc-900 leading-tight mb-4">
-                        Youth and Senior Summer Program
-                    </h2>
-                    <p class="text-2xl text-zinc-600 font-medium">
-                        Summer Bootcamp for All Ages
-                    </p>
-                </div>
-
-                <!-- Description -->
-                <div class="bg-zinc-50 border border-zinc-100 rounded-2xl p-10 mb-12">
-                    <p class="text-center text-zinc-700 text-[17px] leading-relaxed">
-                        <strong>Join our summer fitness experience</strong> designed for both youth and seniors. 
-                        Stay active during summer with <strong>1-on-1 sessions available</strong>.
-                    </p>
-                </div>
-
-                <!-- Simple Call to Action Text -->
-                <div class="text-center mb-12">
-                    <p class="font-semibold text-zinc-900 text-3xl md:text-4xl">
-                        Sign up using the form below
-                    </p>
-                    <p class="text-zinc-500 mt-3 text-lg">
-                        for the FitGuru Fitness Summer Program
-                    </p>
-                </div>
-
+            <div class="mb-10">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 tracking-tight uppercase">
+                    Youth Fitness Clinic & Seniors Bootcamp Program
+                </h2>
+                <p class="text-xl md:text-2xl font-light text-zinc-600">Professional training for all ages</p>
             </div>
 
-            <!-- Footer Bar -->
-            <div class="bg-white border-t border-zinc-100 px-10 py-7 text-center text-sm text-zinc-500">
-                Limited spots available • Sessions begin June 2026
+            <div class="bg-zinc-50 rounded-2xl p-8 mb-10">
+                <p class="text-lg leading-relaxed text-zinc-800 font-medium">
+                    Join our inclusive fitness experience designed for the Youth Fitness Clinic and Seniors Bootcamp Program. 
+                    Build strength and stay active year-round. We offer 1 on 1 sessions 
+                    to help you reach your goals in a supportive environment.
+                </p>
             </div>
-        </div>
 
-        <!-- Google Form -->
-        <div class="max-w-3xl mx-auto mt-16">
-            <iframe 
-                src="https://docs.google.com/forms/d/e/1FAIpQLSfQlgr-TWL5agwopJIGZG_MQ30kmy2pRZjqgrKmC5sTHYX5Lg/viewform?embedded=true" 
-                width="640" 
-                height="2100" 
-                frameborder="0" 
-                marginheight="0" 
-                marginwidth="0">
-                Loading…
-            </iframe>
-        </div>
+            <div class="form-container mb-10">
+                <div class="absolute inset-0 flex items-center justify-center border-2 border-dashed border-zinc-200 rounded-xl">
+                    <p class="text-zinc-400 italic text-sm">Paste your Google Form embed code here to display the form.</p>
+                </div>
+            </div>
 
-        <!-- Copyright -->
-        <div class="max-w-3xl mx-auto text-center text-xs text-zinc-400 py-20">
-            © 2026 FitGuru LLC. All Rights Reserved.
-        </div>
+            <div class="mt-10 pt-10 border-t border-zinc-100">
+                <h3 class="text-xl font-bold uppercase mb-6 text-zinc-900">Payment Options</h3>
+                <p class="mb-8 text-zinc-600">Payments are handled <b>in person</b> or <b>coordinated after registration</b>. We accept:</p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8 text-lg font-bold">
+                    <div class="flex items-center gap-2"><span class="w-3 h-3 bg-black rounded-full"></span> ZELLE</div>
+                    <div class="flex items-center gap-2"><span class="w-3 h-3 bg-black rounded-full"></span> CASH APP</div>
+                    <div class="flex items-center gap-2"><span class="w-3 h-3 bg-black rounded-full"></span> VENMO</div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="mt-16 text-center">
+            <p class="text-sm font-bold uppercase tracking-widest text-black">&copy; 2026 FitGuru LLC. All rights reserved.</p>
+            <p class="text-xs text-zinc-400 mt-2">This belongs to FitGuru LLC</p>
+        </footer>
 
     </div>
-
 </body>
 </html>
